@@ -6,19 +6,23 @@ import java.util.Random;
 public class Lesson3 {
 
     public static void main(String[] args) {
+        // task 1
         int[] zeroOneArray = generateRandomZeroOneArray(10);
         System.out.println(Arrays.toString(zeroOneArray)); // [0, 0, 1, 1, 1, 1, 0, 1, 1, 1]
         replaceZeroOnes(zeroOneArray);
         System.out.println(Arrays.toString(zeroOneArray)); // [1, 1, 0, 0, 0, 0, 1, 0, 0, 0]
 
+        // task 2
         int[] arrayToFill = new int[100];
         fillArrayFromOneToLength(arrayToFill);
         System.out.println(Arrays.toString(arrayToFill)); // [1, 2, 3, 4, 5, 6, 7 ... 97, 98, 99, 100]
 
+        // task 3
         int[] predefinedArray = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
         multiplyElementsLessSixByTwo(predefinedArray);
         System.out.println(Arrays.toString(predefinedArray)); // [2, 10, 6, 4, 11, 8, 10, 4, 8, 8, 9, 2]
 
+        // task 4
         int n = 5;
         int[][] array2d = new int[n][n];
         fill2dArrayDiagonals(array2d);
@@ -29,12 +33,15 @@ public class Lesson3 {
 //        0 1 0 1 0
 //        1 0 0 0 1
 
+        // task 5
         int[] filledArray = generateArrayWithValue(10, 5);
         System.out.println(Arrays.toString(filledArray)); // [5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
 
+        // task 6
         int[] minMaxArray = {-100, 20, -30, 3540, 0, 9, 198, -280, 1};
         printMinMaxOfArray(minMaxArray); // min: -280, max: 3540
 
+        // task 7
         int[] leftRightArray1 = {2, 2, 2, 1, 2, 2, 10, 1};
         System.out.println(checkLeftRightSumEqual(leftRightArray1)); // true
         int[] leftRightArray2 = {1, 1, 1, 2, 1};
@@ -48,6 +55,7 @@ public class Lesson3 {
         int[] leftRightArray6 = {1, 2, 1, 1, 5};
         System.out.println(checkLeftRightSumEqual(leftRightArray6)); // true
 
+        // task 8
         int[] arrayToShiftRight = {1, 0, 3, 2, 5};
         System.out.println(Arrays.toString(arrayToShiftRight)); // [1, 0, 3, 2, 5]
         shiftArray(arrayToShiftRight, 3);
